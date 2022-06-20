@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minitest</title>
+</head>
+<body>
+
+</body>
+  <script>
+    //   // Bai 1
+    //   mang1 = [1,2,3,4,5,6];
+    // function demSoChan() {
+    //   let count = 0;
+    //   for (let i = 0; i < mang1.length; i++) {
+    //       if (mang1[i] % 2 == 0) {
+    //           count += 1;
+    //       }
+    //   }
+    //   return count;
+    // }
+    // result = demSoChan(mang1);
+    // alert("So chan trong mang la: " + demSoChan(mang1));
+
+    // // Bai 2
+    // let nhapSo = prompt("Nhap 1 so bat ky");
+    // mang = [1,2,3,4,5,6,7,8,9,10,11,12,13,1,2,3,4];
+    // function duyetMang() {
+    //     let count = 0;
+    //     for (let i = 0; i < mang.length; i++) {
+    //         if (nhapSo == mang[i]) {
+    //             count++;
+    //         }
+    //     }
+    //     return count;
+    // }
+    // goiHam = duyetMang(nhapSo);
+    // alert("Co " + goiHam + " so " + nhapSo);
+
+    // // Bai 3
+    // mang = [1,2,3,4,5,6,7,8,9];
+    // function isPrime(n) {
+    //     if (n < 2) return false;
+    //     if (n < 4) return true;
+    //     if (n >= 4){
+    //         for (let i = 2; i <= Math.sqrt(n); i++) {
+    //             if (n%i == 0) return false;
+    //         }
+    //         return true;
+    //     }
+    // }
+    // function tinhTong() {
+    //     let tong = 0;
+    //     for (let i = 0; i < mang.length; i++) {
+    //         if(isPrime(mang[i]) === true) {
+    //             tong += mang[i];
+    //         }
+    //     }
+    //     return tong;
+    // }
+    // alert("Tong cac so nguyen to trong mang la: " + tinhTong());
+
+    // Bai 4
+    function isPrime(n) {
+        if (n < 2) return false;
+        if (n < 4) return true;
+        if (n >= 4) {
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n%i == 0) return false;
+            }
+            return true;
+        }
+    }
+    function tongSntDuoi500(){
+        let tong = 0;
+        for (let i = 1; i <= 500; i++) {
+            if (isPrime(i)){
+                tong += i;
+            }
+        }
+        return tong;
+    }
+    alert("Tong cac so nguyen to nho hon 500 la: " + tongSntDuoi500(500))
+  </script>
+</html>
